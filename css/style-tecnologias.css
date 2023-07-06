@@ -1,0 +1,16 @@
+#img0 {
+    object-position: center;
+}
+
+#img1 {
+    object-position: bottom;
+}
+
+#img2 {
+    object-position: top;
+    overflow: scroll;
+}
+
+#img3 {
+    object-position: center; 
+}

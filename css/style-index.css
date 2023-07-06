@@ -1,0 +1,70 @@
+.welcome {
+    background-image: url(/final/img/huerta/ahora2.jpg);
+    background-size: cover;
+    background-position: top;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.welcome img {
+    height: 40vh;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    row-gap: 3rem;
+}
+
+.title {
+    font-size: 7rem;
+    filter: drop-shadow(4px 4px 4px black);
+    margin: 0;
+}
+
+.welcome span:first-child {
+    color: var(--white);
+}
+
+.welcome span:last-child {
+    color: var(--honolulu-blue);
+}
+
+.welcome svg {
+    width: 4rem;
+    fill: var(--white);
+    position: absolute;
+    bottom: 0;
+    animation: floating 1s infinite alternate;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        transform: translateY(1rem);
+    }
+}
+
+#img0 {
+    object-position: center;
+}
+
+#img1 {
+    object-position: center;
+}
+
+#img2 {
+    object-position: bottom;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-impacto-social.css">
+    <script src="js/script.js"></script>
+    <title>HortaTech - Impacto Social</title>
+</head>
+<body onload="init()">
+    <nav id="nav">
+        <div class="nav-wrapper">
+            <a href="Inicio.html"><img src="img/hortatech_logo.png" alt=""></a>
+            <p>Horta<span>Tech</span></p>
+        </div>
+        <h1>Impacto Social</h1>
+        <div id="nav-icon" onclick="toggleNav('auto')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+    </nav>
+    <div id="nav-menu">
+        <div>
+            <a href="inicio.html">Inicio</a>
+        </div>
+        <div>
+            <a href="gestion-del-agua.html">Gestión del Agua</a>
+        </div>
+        <div>
+            <a href="impacto-social.html"><span>Impacto Social</span></a>
+        </div>
+        <div>
+            <a href="sostenibilidad-ambiental.html">Sostenibilidad Ambiental</a>
+        </div>
+        <div>
+            <a href="tecnologias.html">Tecnologías</a>
+        </div>
+        <div>
+            <a href="noticias-y-actualizaciones.html">Noticias y Actualizaciones</a>
+        </div>
+        <div>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+        <div>
+            <a href="contactanos.html">Contáctanos</a>
+        </div>
+    </div>
+    <div id="navigation-toolbar">
+        <div>
+            <svg onclick="scrollToSection('down')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('up')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('top')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg>   
+        </div>
+        <div>
+            <a href="sostenibilidad-ambiental.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+            </a>
+        </div>
+    </div>
+    <main>
+        <header>
+            <h1>Impacto Social</h1>
+        </header>
+        <section>
+            <div class="collapsible">
+                <h2>Campañas de concienciación sobre el valor del agua</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    Como parte del compromiso de Hortatech con el impacto social, se llevan a cabo campañas de concienciación sobre el valor del agua en la Huerta de Valencia. Estas campañas tienen como objetivo sensibilizar a la sociedad sobre la importancia de este recurso vital y promover prácticas responsables en su uso. Algunos aspectos clave de estas campañas incluyen:
+                </p>
+                <ul>
+                    <li>
+                        <b>Educación sobre la importancia del agua</b>: Se desarrollan programas educativos dirigidos a diferentes grupos de edad, desde niños hasta adultos, con el fin de transmitir conocimientos sobre la importancia del agua para la vida, la agricultura y el medio ambiente. Estas actividades educativas buscan crear conciencia sobre la necesidad de conservar y utilizar el agua de manera eficiente.
+                    </li>
+                    <li>
+                        <b>Promoción de prácticas sostenibles</b>: Se fomenta la adopción de prácticas sostenibles en el uso del agua, tanto en el ámbito doméstico como en el sector agrícola. Se brindan consejos y recomendaciones para reducir el consumo de agua, utilizar sistemas de riego eficientes y aprovechar al máximo este recurso limitado. Además, se promueve el uso de tecnologías y soluciones innovadoras que contribuyan a una gestión más eficiente del agua.
+                    </li>
+                    <li>
+                        <b>Participación comunitaria</b>: Se busca involucrar a la comunidad en la toma de decisiones y acciones relacionadas con la gestión del agua. Se realizan actividades de participación ciudadana, como talleres, foros y reuniones, donde se fomenta el diálogo y se recogen ideas y opiniones de los ciudadanos. Esto crea un sentido de pertenencia y corresponsabilidad en la gestión del agua.
+                    </li>
+                    <li>
+                        <b>Alianzas con organizaciones y entidades locales</b>: Se establecen alianzas estratégicas con organizaciones y entidades locales, como escuelas, asociaciones de vecinos y empresas, para fortalecer el impacto de las campañas de concienciación. Estas colaboraciones permiten llegar a un público más amplio y generar un mayor impacto en la comunidad.
+                    </li>
+                </ul>
+                <p>
+                    El objetivo principal de estas campañas de concienciación es fomentar una cultura del agua responsable, donde se valore y se utilice de manera consciente y sostenible. A través de la educación y la participación ciudadana, Hortatech busca generar un cambio de actitud hacia el uso del agua y promover una gestión responsable que garantice su disponibilidad a largo plazo.
+                </p>
+                <img src="img/huerta/upscaled/naZCD1xW_2x.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Promoción de la importancia histórica y patrimonial de las infraestructuras hidráulicas</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    La promoción de la importancia histórica y patrimonial de las infraestructuras hidráulicas es un aspecto fundamental en las actividades de Hortatech. Se busca destacar el valor cultural y patrimonial de estas estructuras, que son parte integral de la historia y la identidad de la Huerta de Valencia. Algunos enfoques clave en la promoción de este patrimonio incluyen:
+                </p>
+                <ul>
+                    <li>
+                        <b>Divulgación de la historia y el significado</b>: A través de publicaciones, exposiciones, y material educativo, se difunde información sobre la historia y el papel crucial que desempeñan las infraestructuras hidráulicas en la Huerta de Valencia. Se resaltan los avances tecnológicos, las técnicas tradicionales y la importancia histórica de estos sistemas de riego y canales.
+                    </li>
+                    <li>
+                        <b>Valorización del patrimonio</b>: Se promueve el respeto y la conservación de las infraestructuras hidráulicas como un patrimonio colectivo. Se destaca su valor arquitectónico, ingenieril y cultural, así como su contribución al desarrollo económico y social de la región. Se busca generar un sentido de pertenencia y orgullo entre los habitantes de la Huerta de Valencia.
+                    </li>
+                    <li>
+                        <b>Visitas guiadas y actividades educativas</b>: Se organizan visitas guiadas a las infraestructuras hidráulicas, permitiendo a los visitantes conocer de cerca su funcionamiento y su importancia histórica. Además, se llevan a cabo actividades educativas, como talleres y charlas, para promover una comprensión más profunda del patrimonio hidráulico y su relevancia en el pasado y presente de la región.
+                    </li>
+                    <li>
+                        <b>Cooperación con instituciones culturales</b>: Hortatech establece colaboraciones con instituciones culturales, como museos, centros de interpretación y asociaciones históricas, para desarrollar proyectos conjuntos de investigación, exhibiciones y actividades relacionadas con el patrimonio hidráulico. Estas alianzas fortalecen el alcance y el impacto de las iniciativas de valorización del patrimonio.
+                    </li>
+                </ul>
+                <p>
+                    La promoción de la importancia histórica y patrimonial de las infraestructuras hidráulicas busca generar conciencia y aprecio hacia estos elementos clave de la Huerta de Valencia. Al resaltar su valor cultural, se fomenta su preservación y se promueve la identidad local, contribuyendo a la protección y el legado de este valioso patrimonio para las generaciones futuras.
+                </p>
+                <img src="img/huerta/ImpactoSocial_2.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Iniciativas de accesibilidad universal para todos los usuarios</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    En HortaTech, implementamos iniciativas de accesibilidad universal para asegurar que todas las personas, independientemente de sus capacidades o discapacidades, puedan participar y beneficiarse de nuestras actividades. Nuestro enfoque se basa en las siguientes acciones:
+                </p>
+                <ul>
+                    <li>
+                        <b>Diseño inclusivo</b>: Nos aseguramos de que nuestros espacios, materiales y recursos estén diseñados de manera que sean accesibles para todas las personas. Consideramos aspectos como rampas de acceso, señalización clara y textos legibles, con el objetivo de eliminar barreras físicas y comunicativas.
+                    </li>
+                    <li>
+                        <b>Tecnologías accesibles</b>: Utilizamos tecnologías y herramientas que facilitan la accesibilidad, como software de lectura de pantalla y ajustes de contraste y tamaño de fuente. Además, nos esforzamos por cumplir con los estándares de accesibilidad web en nuestra página y plataformas digitales.
+                    </li>
+                    <li>
+                        <b>Sensibilización y formación</b>: Capacitamos a nuestro personal y colaboradores para que comprendan la importancia de la accesibilidad y sepan cómo brindar una experiencia inclusiva. Promovemos la sensibilización y el respeto hacia las diferentes capacidades, creando un entorno acogedor y libre de barreras.
+                    </li>
+                    <li>
+                        <b>Adaptación de actividades</b>: Adaptamos nuestras actividades y eventos para garantizar la participación de todas las personas. Esto puede incluir la disponibilidad de intérpretes de lenguaje de señas, facilitadores para personas con discapacidades cognitivas y la adaptación de materiales para diferentes habilidades.
+                    </li>
+                    <li>
+                        <b>Colaboración con organizaciones especializadas</b>: Trabajamos en colaboración con organizaciones y grupos especializados en accesibilidad para recibir orientación y asesoramiento en nuestras iniciativas. Buscamos aprender y mejorar constantemente nuestras prácticas de accesibilidad.
+                    </li>
+                </ul>
+                <p>
+                    Nuestro objetivo final es crear un entorno inclusivo donde todos los usuarios se sientan bienvenidos y tengan igualdad de oportunidades para participar en nuestras actividades. A través de nuestras iniciativas de accesibilidad, buscamos promover la igualdad y la inclusión en la sociedad.
+                </p>
+                <img src="img/huerta/upscaled/ImpactoSocial_3-transformed.jpeg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Beneficios sociales y económicos del proyecto</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    El proyecto Hortatech tiene múltiples beneficios sociales y económicos para la Huerta de Valencia y sus comunidades. A continuación, se presentan algunos de los principales beneficios:
+                </p>
+                <ul>
+                    <li>
+                        <b>Generación de empleo</b>: Hortatech impulsa la creación de empleo local al promover actividades relacionadas con la gestión del agua, la preservación del patrimonio y el turismo cultural. Esto contribuye al desarrollo económico de la región y brinda oportunidades de empleo sostenibles.
+                    </li>
+                    <li>
+                        <b>Desarrollo económico local</b>: Al mejorar la eficiencia en el uso del agua y promover prácticas agrícolas sostenibles, Hortatech ayuda a optimizar la producción agrícola en la Huerta de Valencia. Esto conduce a un aumento en la productividad y la rentabilidad de las explotaciones agrícolas, lo que a su vez fortalece la economía local.
+                    </li>
+                    <li>
+                        <b>Ahorro de recursos</b>: La gestión eficiente del agua y la implementación de tecnologías avanzadas en Hortatech permiten un uso más racional de los recursos hídricos. Esto no solo contribuye a la preservación de un recurso vital, sino que también reduce los costos asociados al consumo excesivo de agua y energía.
+                    </li>
+                    <li>
+                        <b>Mejora de la calidad de vida</b>: Al promover la conservación del patrimonio natural y cultural de la Huerta de Valencia, Hortatech contribuye a mejorar la calidad de vida de las comunidades locales. El acceso a espacios naturales y la valorización de la herencia cultural generan un mayor bienestar y un sentido de identidad y pertenencia en la población.
+                    </li>
+                    <li>
+                        <b>Turismo sostenible</b>: Hortatech impulsa iniciativas de turismo cultural basadas en el patrimonio histórico y paisajístico de la Huerta de Valencia. Esto atrae a visitantes interesados en experiencias auténticas y sostenibles, lo que genera ingresos y contribuye al desarrollo de actividades económicas complementarias, como la hostelería y los servicios turísticos
+                    </li>
+                    <li>
+                        <b>Concienciación y participación comunitaria</b>: El proyecto Hortatech promueve la concienciación sobre la importancia del agua, la preservación del patrimonio y la necesidad de una gestión sostenible. A través de programas educativos y actividades de participación comunitaria, se fomenta el compromiso ciudadano y se fortalecen los lazos sociales en la región.
+                    </li>
+                </ul>
+                <p>
+                    En resumen, Hortatech genera beneficios sociales y económicos al impulsar el desarrollo local, promover la sostenibilidad, preservar el patrimonio y mejorar la calidad de vida de las comunidades en la Huerta de Valencia. Este proyecto es un ejemplo de cómo la innovación y la gestión responsable pueden generar un impacto positivo en múltiples aspectos de la sociedad.
+                </p>
+                <img src="img/huerta/ImpactoSocial_4.jpeg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="privacy-wrapper">
+                <div>© <a href="Inicio.html">HortaTech</a> 2023</div>
+                <div><a href="/downloadable/Política de privacidad Hortatech.pdf" download="">Política de Privacidad</a></div>
+                <div><a href="/downloadable/Aviso legal Hortatech.pdf" download="">Aviso Legal</a></div>
+            </div>
+            <div class="social-wrapper">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

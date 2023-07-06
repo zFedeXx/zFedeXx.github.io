@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-gestion-del-agua.css">
+    <script src="js/script.js"></script>
+    <title>HortaTech - Gestión del Agua</title>
+</head>
+<body onload="init()">
+    <nav id="nav">
+        <div class="nav-wrapper">
+            <a href="Inicio.html"><img src="img/hortatech_logo.png" alt=""></a>
+            <p>Horta<span>Tech</span></p>
+        </div>
+        <h1>Gestión del Agua</h1>
+        <div id="nav-icon" onclick="toggleNav('auto')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+    </nav>
+    <div id="nav-menu">
+        <div>
+            <a href="Inicio.html">Inicio</a>
+        </div>
+        <div>
+            <a href="gestion-del-agua.html"><span>Gestión del Agua</span></a>
+        </div>
+        <div>
+            <a href="impacto-social.html">Impacto Social</a>
+        </div>
+        <div>
+            <a href="sostenibilidad-ambiental.html">Sostenibilidad Ambiental</a>
+        </div>
+        <div>
+            <a href="tecnologias.html">Tecnologías</a>
+        </div>
+        <div>
+            <a href="noticias-y-actualizaciones.html">Noticias y Actualizaciones</a>
+        </div>
+        <div>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+        <div>
+            <a href="contactanos.html">Contáctanos</a>
+        </div>
+    </div>
+    <div id="navigation-toolbar">
+        <div>
+            <svg onclick="scrollToSection('down')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('up')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('top')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg>   
+        </div>
+        <div>
+            <a href="impacto-social.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+            </a>
+        </div>
+    </div>
+    <main>
+        <header>
+            <h1>Gestión del Agua</h1>
+        </header>
+        <section>
+            <div class="collapsible">
+                <h2>Importancia de la gestión del agua en la Huerta de Valencia</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>La gestión del agua desempeña un papel crucial en la Huerta de Valencia, una región conocida por su rica tradición agrícola y su valioso patrimonio cultural. A continuación, se detallan algunas razones por las cuales la gestión del agua es de vital importancia en esta área:</p>
+                <ul>
+                    <li><b>Sostenibilidad agrícola</b>: La Huerta de Valencia es reconocida por sus cultivos de frutas, hortalizas y arroz, que dependen en gran medida del suministro adecuado de agua. Una gestión eficiente del agua garantiza la disponibilidad constante de este recurso vital para mantener la productividad agrícola a largo plazo.</li>
+                    <li><b>Preservación del ecosistema</b>: La Huerta de Valencia alberga una gran diversidad de especies vegetales y animales, incluidas aves migratorias y especies autóctonas. La gestión adecuada del agua contribuye a mantener los ecosistemas naturales, los humedales y los espacios verdes asociados con la huerta, asegurando un equilibrio ecológico y protegiendo la biodiversidad.</li>
+                    <li><b>Protección del patrimonio cultural</b>: La Huerta de Valencia posee un valioso patrimonio cultural, en particular, las tradicionales infraestructuras hidráulicas que han sido utilizadas durante siglos para el riego de los cultivos. Una gestión adecuada del agua es fundamental para preservar estas estructuras históricas y mantener viva la historia y cultura de la región.</li>
+                    <li><b>Adaptación al cambio climático</b>: El cambio climático está generando desafíos adicionales en términos de disponibilidad de agua en la Huerta de Valencia. Las sequías prolongadas y los patrones climáticos cambiantes afectan la cantidad y calidad del agua disponible. Una gestión eficiente del agua ayuda a enfrentar estos desafíos y garantiza la continuidad de la actividad agrícola y la conservación del patrimonio frente a los impactos del cambio climático.</li>
+                    <li><b>Uso responsable de los recursos</b>: La gestión eficiente del agua implica utilizar este recurso de manera responsable y sostenible. Esto incluye la implementación de técnicas de riego eficientes, la promoción de prácticas agrícolas sostenibles y la concienciación sobre el uso responsable del agua entre los agricultores y la comunidad en general.</li>
+                </ul>
+                <p>
+                    La gestión del agua en la Huerta de Valencia es esencial para garantizar la sostenibilidad agrícola, proteger el valioso patrimonio cultural y natural, adaptarse al cambio climático y promover el uso responsable de los recursos hídricos. Es fundamental implementar soluciones innovadoras y estrategias eficientes para una gestión efectiva del agua y asegurar un futuro sostenible para esta región única.
+                </p>
+                <img src="img/huerta/upscaled/St5EvJTa_2x.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Soluciones innovadoras para una gestión eficiente del agua</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>La gestión eficiente del agua es fundamental para asegurar un uso responsable y sostenible de este recurso vital en la Huerta de Valencia. A continuación, se presentan algunas soluciones innovadoras que se están implementando para lograr una gestión eficiente del agua en la región:</p>
+                <ul>
+                    <li><b>Tecnología de riego inteligente</b>: La aplicación de tecnologías avanzadas en sistemas de riego permite un uso preciso y eficiente del agua. Sensores de fibra óptica con medición cuantitativa y cualitativa y sistemas de riego automatizados ayudan a determinar las necesidades hídricas de los cultivos y ajustar el riego en consecuencia, evitando el desperdicio de agua.</li>
+                    <li><b>Sistema predictivo de riego en función de las necesidades de riego</b>: El uso del Cálculo de Necesidades de Riego pone al alcance la metodología más extendida, sencilla y accesible para el cálculo de necesidades de riego. Se trata del método propuesto por la Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO) que tiene su base en la publicación Evapotranspiración del cultivo - Guías para la determinación de los requerimientos de agua de los cultivos.</li>
+                    <li><b>Gestión basada en datos y análisis</b>: La recopilación y el análisis de datos relacionados con la gestión del agua permiten tomar decisiones informadas y optimizar los recursos disponibles. Mediante el uso de plataformas digitales y sistemas de información, se puede monitorear y analizar en tiempo real el uso del agua, identificar áreas de mejora y tomar medidas correctivas de manera oportuna.</li>
+                </ul>
+                <p>Estas soluciones innovadoras, combinadas con la concienciación y la participación activa de agricultores y comunidades locales, contribuyen a una gestión más eficiente y sostenible del agua en la Huerta de Valencia. Al adoptar tecnologías avanzadas y prácticas agrícolas responsables, podemos garantizar la disponibilidad de agua a largo plazo y preservar los recursos naturales y culturales de esta región tan especial.</p>
+                <img src="img/huerta/2000.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Sistemas de control y monitoreo en tiempo real de la Huerta de Valencia</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>En la Huerta de Valencia, vamos a  implementar sistemas de control y monitoreo en tiempo real para optimizar la gestión del agua y garantizar un uso eficiente de este recurso vital. Estos sistemas proporcionaran información en tiempo real sobre el estado de los recursos hídricos y permiten tomar decisiones basadas en datos precisos. A continuación, se describen algunas de las características y beneficios de estos sistemas:</p>
+                <ul>
+                    <li><b>Sensores y estaciones de monitoreo</b>: Se instalan sensores en diferentes puntos estratégicos de la Huerta de Valencia, como fuentes de agua, canales de riego y campos de cultivo. Estos sensores recopilan datos sobre el nivel de agua, la calidad del agua, la temperatura y otros parámetros relevantes. Las estaciones de monitoreo recopilan y procesan estos datos, proporcionando información en tiempo real sobre el estado de los recursos hídricos.</li>
+                    <li><b>Control automatizado</b>: Los sistemas de control en tiempo real permiten ajustar automáticamente los flujos de agua y los ciclos de riego en función de las necesidades reales de los cultivos y las condiciones climáticas. Esto garantiza que se suministre la cantidad de agua adecuada en el momento adecuado, evitando tanto el desperdicio como la escasez de agua.</li>
+                    <li><b>Alertas y alarmas</b>: Los sistemas de monitoreo en tiempo real están equipados con alertas y alarmas que se activan cuando se detectan condiciones anormales, como fugas de agua, niveles bajos de agua o problemas de calidad del agua. Estas alertas permiten una respuesta rápida y eficiente, evitando pérdidas significativas y minimizando el impacto en los cultivos y el entorno.</li>
+                    <li><b>Visualización y análisis de datos</b>: Los datos recopilados por los sistemas de monitoreo en tiempo real se presentan en paneles de control intuitivos y visuales. Esto permite a los gestores de agua y agricultores acceder a información clara y comprensible sobre el estado de los recursos hídricos. Además, se pueden realizar análisis y seguimiento a largo plazo para identificar patrones y tendencias, lo que facilita la toma de decisiones informadas y la planificación a largo plazo.</li>
+                    <li><b>Eficiencia en el mantenimiento</b>: Los sistemas de monitoreo en tiempo real también ayudan a optimizar el mantenimiento de la infraestructura de agua. Al detectar de manera temprana posibles fallas o problemas, se pueden tomar medidas preventivas y programar el mantenimiento de manera más eficiente, reduciendo los costos y minimizando las interrupciones en el suministro de agua.</li>
+                </ul>
+                <p>La implementación de sistemas de control y monitoreo en tiempo real en la Huerta de Valencia mejora significativamente la gestión del agua al proporcionar información precisa y actualizada sobre los recursos hídricos. Esto permite una toma de decisiones más efectiva, un uso eficiente del agua y una respuesta rápida ante situaciones anómalas. En última instancia, estos sistemas contribuyen a garantizar la sostenibilidad de la Huerta de Valencia y la conservación de sus recursos naturales y culturales.</p>
+                <img src="img/huerta/valencia-top2.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Monitoreo y preservación de la calidad del agua</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>En la Huerta de Valencia, el monitoreo y la preservación de la calidad del agua son aspectos fundamentales para garantizar la sostenibilidad y la salud de los recursos hídricos. A continuación, se presentan algunas estrategias y medidas utilizadas para llevar a cabo el monitoreo y la preservación de la calidad del agua en la Huerta de Valencia:</p>
+                <ul>
+                    <li><b>Análisis de la calidad del agua</b>: Se realizan análisis periódicos de la calidad del agua en diferentes puntos de la Huerta de Valencia, incluyendo fuentes de agua, canales de riego y pozos. Estos análisis evalúan parámetros como el pH, la concentración de nutrientes, la presencia de contaminantes y otros indicadores de la calidad del agua. Esto permite detectar cualquier cambio o problema en la calidad del agua y tomar medidas correctivas de manera oportuna.</li>
+                    <li><b>Monitoreo continuo</b>: Se implementan sistemas de monitoreo continuo que permiten obtener datos en tiempo real sobre la calidad del agua. Estos sistemas utilizan sensores y tecnologías avanzadas para medir diferentes parámetros, como la turbidez, la conductividad eléctrica y la presencia de contaminantes específicos. El monitoreo continuo ayuda a identificar tendencias, cambios estacionales y eventos anómalos que podrían afectar la calidad del agua.</li>
+                    <li><b>Control de fuentes de contaminación</b>: Se implementan medidas para controlar y reducir las fuentes de contaminación que pueden afectar la calidad del agua en la Huerta de Valencia. Esto incluye la implementación de prácticas agrícolas sostenibles, la promoción del uso responsable de productos químicos y fertilizantes, y la regulación de actividades industriales cercanas a los recursos hídricos. Al controlar las fuentes de contaminación, se puede prevenir la degradación de la calidad del agua y proteger los ecosistemas acuáticos.</li>
+                    <li><b>Educación y concienciación</b>: Se llevan a cabo campañas de educación y concienciación para informar a los agricultores, residentes y usuarios de la Huerta de Valencia sobre la importancia de preservar la calidad del agua. Se promueven prácticas responsables de uso del agua, como el riego eficiente y el uso adecuado de productos químicos. Además, se fomenta la participación activa de la comunidad en la protección de los recursos hídricos y la denuncia de actividades que puedan afectar negativamente la calidad del agua.</li>
+                    <li><b>Colaboración con entidades reguladoras</b>: Se establecen alianzas y colaboraciones con entidades reguladoras y organismos encargados de la gestión del agua para garantizar el cumplimiento de los estándares de calidad del agua establecidos. Esto incluye la coordinación de esfuerzos en el monitoreo, la recopilación de datos y la implementación de medidas de protección y conservación de la calidad del agua.</li>
+                </ul>
+                <p>El monitoreo y la preservación de la calidad del agua en la Huerta de Valencia son fundamentales para proteger los ecosistemas acuáticos, asegurar la salud de los cultivos y promover la sostenibilidad a largo plazo. Mediante el uso de tecnologías avanzadas, el control de fuentes de contaminación y la colaboración con la comunidad y las entidades reguladoras, se trabaja en conjunto para preservar la calidad del agua y garantizar su disponibilidad para las generaciones futuras.</p>
+                <img src="img/huerta/upscaled/LP4FU3kT_2x.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Preservación del Patrimonio</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>Valor y significado del patrimonio humano, paisajístico y cultural de la huerta
+                    La Huerta de Valencia posee un valioso patrimonio humano, paisajístico y cultural que refleja siglos de historia y tradiciones arraigadas en la región. Este patrimonio es una parte integral de la identidad de la huerta y desempeña un papel fundamental en la preservación de la herencia cultural y en la promoción del turismo cultural. A continuación, exploraremos el valor y el significado de cada aspecto del patrimonio de la huerta:</p>
+                    <ul>
+                        <li><b>Patrimonio humano</b>: El patrimonio humano de la huerta está estrechamente ligado a la actividad agrícola y a la forma de vida de las personas que trabajan y han trabajado en la huerta a lo largo de los años. Los conocimientos tradicionales transmitidos de generación en generación, las técnicas agrícolas ancestrales y las costumbres locales conforman un patrimonio humano invaluable. Preservar este legado es esencial para mantener viva la conexión entre las comunidades locales y la tierra, así como para salvaguardar la diversidad cultural y promover el respeto por el trabajo de los agricultores.
+                        </li>
+                    <li><b>Patrimonio paisajístico</b>: El paisaje de la huerta es único y reconocible por sus características distintivas, como los campos de cultivo, los canales de riego, los caminos rurales y las masías tradicionales. Este paisaje ha sido modelado por siglos de agricultura sostenible y se ha convertido en un símbolo de identidad para la región. El patrimonio paisajístico de la huerta es apreciado tanto por su belleza estética como por su importancia ecológica, ya que alberga una gran diversidad de flora y fauna.</li>
+                    <li><b>Patrimonio cultural</b>: La huerta tiene una rica herencia cultural que abarca desde la gastronomía hasta las festividades y las manifestaciones artísticas. La cocina tradicional de la huerta, basada en productos frescos y locales, es reconocida por su calidad y autenticidad. Además, las festividades y celebraciones populares, como las Fallas, las fiestas de la Virgen de los Desamparados y las romerías, forman parte integral de la identidad cultural de la huerta. El patrimonio cultural de la huerta se conserva a través de la transmisión oral, las tradiciones vivas y los museos locales, contribuyendo así a la preservación de la memoria colectiva y el enriquecimiento cultural de la comunidad.</li>
+                </ul>
+                <p>La preservación del patrimonio humano, paisajístico y cultural de la huerta es fundamental para mantener la identidad y la historia de la región viva. A través de iniciativas de digitalización y gestión del patrimonio, como las desarrolladas por Hortatech, se puede promover la valoración y difusión de este patrimonio, así como fomentar el turismo cultural sostenible. Al reconocer y proteger la importancia de este patrimonio, se fortalece el sentido de pertenencia de la comunidad local y se enriquece la experiencia de quienes visitan la huerta.</p>
+                <img src="img/huerta/Canyes.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Gestión y preservación digital del patrimonio</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>La gestión y preservación digital del patrimonio es una  herramienta innovadora y poderosa que permite conservar, difundir y compartir el valor cultural, histórico y artístico de la Huerta de Valencia. A través de la digitalización de documentos, imágenes, objetos y otros elementos del patrimonio, se crea un archivo digital que permite su preservación a largo plazo y su accesibilidad para las generaciones presentes y futuras.
+                </p>
+                <p>
+                    La gestión digital del patrimonio ofrece numerosos beneficios y oportunidades:
+                </p>
+                <ul>
+                    <li><b>Conservación a largo plazo</b>: La digitalización de elementos del patrimonio permite protegerlos de los daños físicos y del deterioro que pueden sufrir con el tiempo. Los documentos, fotografías, pinturas y otros objetos digitalizados pueden ser almacenados en formatos seguros y preservados de manera virtual, garantizando su supervivencia y accesibilidad.</li>
+                    <li><b>Accesibilidad global</b>: La gestión digital del patrimonio elimina las barreras geográficas y temporales, ya que las colecciones digitales pueden ser accesibles en cualquier momento y desde cualquier lugar. Esto abre oportunidades para que investigadores, académicos, estudiantes y el público en general puedan explorar y estudiar el patrimonio de la Huerta de Valencia sin restricciones.</li>
+                    <li><b>Difusión y divulgación</b>: La digitalización del patrimonio permite su difusión a través de plataformas en línea, redes sociales y sitios web especializados. Esto facilita la divulgación del patrimonio y promueve la apreciación y el conocimiento público de su valor histórico y cultural.</li>
+                    <li><b>Investigación y análisis</b>: La gestión digital del patrimonio facilita la investigación y el análisis en profundidad de los elementos digitales. Los investigadores y académicos pueden examinar, comparar y estudiar los documentos y objetos digitales para obtener nuevas perspectivas y descubrimientos sobre la historia, la cultura y las tradiciones de la Huerta de Valencia.</li>
+                    <li><b>Conservación de la memoria colectiva</b>: La gestión digital del patrimonio contribuye a la preservación de la memoria colectiva al capturar y documentar elementos significativos de la historia y la cultura de la Huerta de Valencia. Esto asegura que las generaciones futuras tengan acceso a su legado cultural y puedan apreciar y aprender de él.</li>
+                </ul>
+                <p>Hortatech se compromete a desarrollar herramientas y soluciones tecnológicas avanzadas para la gestión y preservación digital del patrimonio de la Huerta de Valencia. A través de la digitalización de documentos históricos, imágenes y otros elementos culturales, se busca promover la conservación y la difusión de este valioso legado, enriqueciendo así la experiencia de la comunidad local y los visitantes interesados en explorar la historia y la cultura de la huerta.</p>
+                <img src="img/huerta/Vista-aèrea-de-lHorta-Sud.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Economía circular basada en el patrimonio hidráulico</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    La economía circular digital basada en el patrimonio hidráulico es una estrategia innovadora que busca aprovechar el valor digital del patrimonio y promover prácticas sostenibles en la gestión del agua en la Huerta de Valencia. Esta enfoque se fundamenta en los principios de la economía circular, que busca minimizar los residuos y maximizar la eficiencia de los recursos, aplicados específicamente al contexto del patrimonio hidráulico.
+                </p>
+                <p>
+                    Algunas de las características y beneficios de la economía circular digital basada en el patrimonio hidráulico son:
+                </p>
+                <ul>
+                    <li>
+                        <b>Digitalización del patrimonio hidráulico</b>: La digitalización de elementos del patrimonio hidráulico, como canales, acequias, norias y otros sistemas de irrigación tradicionales, permite crear una representación digital precisa de estos elementos. Esta digitalización ayuda a preservar y difundir el conocimiento sobre estas estructuras históricas y facilita su gestión y mantenimiento.
+                    </li>
+                    <li>
+                        <b>Creación de valor digital</b>: La digitalización del patrimonio hidráulico genera un valor digital que puede ser utilizado en diferentes formas. Esta representación digital puede ser utilizada para la planificación y gestión de los recursos hídricos, la promoción del turismo cultural y la educación sobre la importancia del patrimonio hidráulico en la Huerta de Valencia.
+                    </li>
+                    <li>
+                        <b>Promoción del turismo cultural</b>: La economía circular digital basada en el patrimonio hidráulico impulsa el desarrollo del turismo cultural en la Huerta de Valencia. La creación de experiencias turísticas basadas en el patrimonio hidráulico digitalizado atrae a visitantes interesados en explorar la riqueza histórica y cultural de la región, generando beneficios económicos y fomentando el respeto y la preservación del patrimonio.
+                    </li>
+                    <li>
+                        <b>Promoción del turismo cultural</b>: La economía circular digital basada en el patrimonio hidráulico impulsa el desarrollo del turismo cultural en la Huerta de Valencia. La creación de experiencias turísticas basadas en el patrimonio hidráulico digitalizado atrae a visitantes interesados en explorar la riqueza histórica y cultural de la región, generando beneficios económicos y fomentando el respeto y la preservación del patrimonio.
+                    </li>
+                    <li>
+                        <b>Participación y colaboración ciudadana</b>: La economía circular digital basada en el patrimonio hidráulico promueve la participación ciudadana y la colaboración en la gestión del agua. La creación de plataformas digitales y herramientas interactivas permite a los ciudadanos contribuir con información, compartir conocimientos y participar en iniciativas de conservación y uso sostenible del agua.
+                    </li>
+                </ul>
+                <p>
+                    Hortatech, en colaboración con empresas y entidades destacadas, trabaja en el desarrollo de soluciones tecnológicas que impulsen la economía circular digital basada en el patrimonio hidráulico en la Huerta de Valencia. Nuestro objetivo es utilizar el potencial digital del patrimonio para promover la sostenibilidad, la preservación del agua y la valoración de la cultura e historia de la región.
+                </p>
+                <img src="img/huerta/tourism/horta-tourism1.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Iniciativas de turismo cultural y valorizacion del patrimonio histórico</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    En el marco de Hortatech, se están impulsando diversas iniciativas de turismo cultural y valorización del patrimonio histórico de la Huerta de Valencia. Estas iniciativas buscan promover el conocimiento y la apreciación de la riqueza cultural e histórica asociada al patrimonio hidráulico de la región. Algunas de estas acciones incluyen:
+                </p>
+                <ul>
+                    <li>
+                        <b>Rutas turísticas</b>: Se están desarrollando rutas turísticas temáticas que permiten a los visitantes explorar y descubrir los elementos del patrimonio hidráulico de la Huerta de Valencia. Estas rutas ofrecen la oportunidad de conocer los sistemas de riego tradicionales, los acueductos históricos, los molinos de agua y otros elementos destacados del patrimonio.
+                    </li>
+                     <li>
+                        <b>Interpretación del patrimonio</b>: Se están creando centros de interpretación y espacios de divulgación que brindan información detallada sobre la historia, el valor y la importancia del patrimonio hidráulico de la Huerta de Valencia. Estos espacios permiten a los visitantes sumergirse en el contexto histórico y comprender mejor la relevancia cultural y medioambiental de los sistemas hidráulicos.
+                    </li>
+                    <li>
+                        <b>Actividades educativas y culturales</b>: Se llevan a cabo actividades educativas y culturales dirigidas a diferentes públicos, como talleres, charlas, exposiciones y eventos temáticos. Estas actividades tienen como objetivo difundir el conocimiento y fomentar la participación activa de la comunidad en la preservación y valorización del patrimonio histórico.
+                    </li>
+                    <li>
+                        <b>Digitalización y accesibilidad</b>: Se está trabajando en la digitalización y accesibilidad del patrimonio histórico, utilizando tecnologías como aplicaciones móviles, realidad aumentada y plataformas digitales. Esto permite que un mayor número de personas puedan acceder a la información y disfrutar de experiencias interactivas que resalten el valor del patrimonio hidráulico.
+                    </li>
+                </ul>
+                <p>
+                        Estas iniciativas de turismo cultural y valorización del patrimonio histórico no solo contribuyen a la promoción del patrimonio de la Huerta de Valencia, sino que también generan beneficios económicos y sociales para la región al impulsar el turismo sostenible, el desarrollo local y la conciencia sobre la importancia de conservar y proteger el legado histórico de la zona.
+                </p>
+                <img src="img/huerta/tourism/horta-tourism2.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="privacy-wrapper">
+                <div>© <a href="Inicio.html">HortaTech</a> 2023</div>
+                <div><a href="/downloadable/Política de privacidad Hortatech.pdf" download="">Política de Privacidad</a></div>
+                <div><a href="/downloadable/Aviso legal Hortatech.pdf" download="">Aviso Legal</a></div>
+            </div>
+            <div class="social-wrapper">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-sostenibilidad-ambiental.css">
+    <script src="js/script.js"></script>
+    <title>HortaTech - Sostenibilidad Ambiental</title>
+</head>
+<body onload="init()">
+    <nav id="nav">
+        <div class="nav-wrapper">
+            <a href="Inicio.html"><img src="img/hortatech_logo.png" alt=""></a>
+            <p>Horta<span>Tech</span></p>
+        </div>
+        <h1>Sostenibilidad Ambiental</h1>
+        <div id="nav-icon" onclick="toggleNav('auto')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+    </nav>
+    <div id="nav-menu">
+        <div>
+            <a href="inicio.html">Inicio</a>
+        </div>
+        <div>
+            <a href="gestion-del-agua.html">Gestión del Agua</a>
+        </div>
+        <div>
+            <a href="impacto-social.html">Impacto Social</a>
+        </div>
+        <div>
+            <a href="sostenibilidad-ambiental.html"><span>Sostenibilidad Ambiental</span></a>
+        </div>
+        <div>
+            <a href="tecnologias.html">Tecnologías</a>
+        </div>
+        <div>
+            <a href="noticias-y-actualizaciones.html">Noticias y Actualizaciones</a>
+        </div>
+        <div>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+        <div>
+            <a href="contactanos.html">Contáctanos</a>
+        </div>
+    </div>
+    <div id="navigation-toolbar">
+        <div>
+            <svg onclick="scrollToSection('down')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('up')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('top')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg>   
+        </div>
+        <div>
+            <a href="tecnologias.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+            </a>
+        </div>
+    </div>
+    <main>
+        <header>
+            <h1>Sostenibilidad Ambiental</h1>
+        </header>
+        <section>
+            <div class="collapsible">
+                <h2>Estrategias de conservación y ahorro de agua</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    Las estrategias de conservación y ahorro de agua implementadas en el proyecto Hortatech se centran en maximizar la eficiencia en el uso del agua y garantizar su uso sostenible a largo plazo. A continuación, se presentan algunas de las principales estrategias utilizadas:
+                </p>
+                <ul>
+                    <li>
+                        <b>Tecnologías avanzadas de riego</b>: Hortatech utiliza tecnologías de riego de última generación, como sistemas de riego por goteo y riego inteligente basado en la demanda de las plantas. Estas tecnologías permiten una aplicación precisa del agua, reduciendo el desperdicio y optimizando la absorción por parte de las plantas.
+                    </li>
+                    <li>
+                        <b>Monitoreo en tiempo real</b>: Se implementan sistemas de monitoreo en tiempo real que brindan información precisa sobre el estado y las necesidades hídricas de los cultivos. Esto permite ajustar la cantidad de agua suministrada de manera eficiente, evitando el exceso de riego y optimizando el consumo.
+                    </li>
+                    <li>
+                        <b>Reutilización y reciclaje del agua</b>: Hortatech promueve la reutilización y el reciclaje del agua en diferentes etapas del proceso agrícola. Se implementan sistemas de captación y almacenamiento de agua de lluvia, así como sistemas de tratamiento y reciclaje de aguas residuales, reduciendo la dependencia de fuentes externas y optimizando el uso de recursos hídricos locales.
+                    </li>
+                    <li>
+                        <b>Educación y capacitación</b>: Se llevan a cabo programas educativos y capacitaciones dirigidas a agricultores y comunidades locales, con el objetivo de promover prácticas de gestión del agua eficientes y sostenibles. Se proporciona información sobre técnicas de riego adecuadas, la importancia de la conservación del agua y la adopción de tecnologías y prácticas más eficientes.
+                    </li>
+                    <li>
+                        <b>Mejora de la infraestructura hídrica</b>: Hortatech trabaja en la mejora y optimización de la infraestructura hídrica existente en la Huerta de Valencia. Esto incluye la reparación y modernización de canales y sistemas de distribución de agua, reduciendo las pérdidas por filtración y asegurando un flujo más eficiente del recurso.
+                    </li>
+                    <li>
+                        <b>Sensibilización y participación comunitaria</b>: Se realizan campañas de sensibilización dirigidas a agricultores, comunidades locales y usuarios del agua en general. Estas campañas tienen como objetivo crear conciencia sobre la importancia de la conservación del agua y fomentar la adopción de prácticas sostenibles en el uso del recurso.
+                    </li>
+                </ul>
+                <p>
+                    Estas estrategias de conservación y ahorro de agua implementadas en Hortatech tienen como resultado una gestión más eficiente y sostenible de los recursos hídricos en la Huerta de Valencia. Al optimizar el uso del agua, se logra un equilibrio entre las necesidades agrícolas y la preservación de los ecosistemas acuáticos y los recursos naturales, garantizando así la disponibilidad del agua para las generaciones futuras.
+                </p>
+                <img src="img/huerta/SostenibilidadAmbiental_1.jpeg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Monitoreo y mantenimiento de la calidad del agua</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    El monitoreo y mantenimiento de la calidad del agua en el proyecto Hortatech se realiza mediante el uso de tecnologías avanzadas que permiten una evaluación precisa y objetiva de la calidad del agua en la Huerta de Valencia. Estas tecnologías garantizan un seguimiento continuo y en tiempo real de los parámetros clave de calidad del agua, y permiten identificar cualquier desviación o anomalía que pueda afectar su idoneidad para diversos usos. A continuación, se presentan las principales tecnologías utilizadas:
+                </p>
+                <ul>
+                    <li>
+                        <b>Sensores y analizadores</b>: Hortatech utiliza una variedad de sensores y analizadores automatizados para monitorear la calidad del agua. Estos dispositivos están equipados con tecnología avanzada que permite medir parámetros como la temperatura, el pH, la conductividad eléctrica, la turbidez y la concentración de diferentes sustancias químicas y contaminantes. Estos sensores proporcionan datos precisos y confiables en tiempo real.
+                    </li>
+                    <li>
+                        <b>Sistemas de telemetría</b>: Los datos recolectados por los sensores y analizadores se transmiten a través de sistemas de telemetría, lo que permite su visualización y análisis en tiempo real. Estos sistemas brindan información detallada sobre la calidad del agua, tanto en puntos específicos como en áreas más extensas de la Huerta de Valencia. Esto facilita la detección temprana de problemas y la toma de decisiones informadas.
+                    </li>
+                    <li>
+                        <b>Análisis de datos</b>: Los datos recopilados a través de la tecnología de monitoreo se analizan utilizando herramientas y software especializados. Estos análisis permiten identificar patrones, tendencias y posibles riesgos para la calidad del agua. Además, los algoritmos y modelos avanzados pueden proporcionar pronósticos y alertas tempranas en caso de situaciones críticas o cambios significativos en la calidad del agua.
+                    </li>
+                    <li>
+                        <b>Mantenimiento preventivo</b>: Hortatech lleva a cabo un programa de mantenimiento preventivo de los equipos de monitoreo para garantizar su correcto funcionamiento y precisión. Se realizan calibraciones periódicas, limpieza y verificaciones para asegurar que los sensores y analizadores sigan proporcionando mediciones confiables y consistentes.
+                    </li>
+                    <li>
+                        <b>Colaboración con autoridades y laboratorios</b>: Hortatech colabora estrechamente con autoridades locales y laboratorios especializados para la validación y verificación de los datos de calidad del agua. Esto garantiza la confiabilidad y objetividad de los resultados obtenidos, y proporciona una base sólida para la toma de decisiones relacionadas con la gestión y preservación del agua en la Huerta de Valencia.
+                    </li>
+                </ul>
+                <p>
+                    Gracias al uso de estas tecnologías avanzadas de monitoreo y mantenimiento de la calidad del agua, Hortatech puede asegurar que los recursos hídricos de la Huerta de Valencia se mantengan en condiciones óptimas para su uso sostenible y la preservación del ecosistema acuático. La información objetiva y en tiempo real obtenida a través de estas tecnologías ayuda a tomar medidas preventivas y correctivas oportunas, contribuyendo a la protección y conservación a largo plazo del agua en la región.
+                </p>
+                <img src="img/huerta/SostenibilidadAmbiental_2.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Preservación de espacios naturales y parques asociados a la huerta</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    La preservación de espacios naturales y parques asociados a la huerta es un objetivo fundamental del proyecto Hortatech. A través de estrategias y acciones concretas, buscamos proteger y conservar estos espacios naturales, que desempeñan un papel crucial en el equilibrio ecológico de la Huerta de Valencia. A continuación, se presentan los principales enfoques y objetivos de nuestra labor de preservación:
+                </p>
+                <ul>
+                    <li>
+                        <b>Conservación de la biodiversidad</b>: Nos esforzamos por salvaguardar la diversidad biológica de los espacios naturales y parques asociados a la huerta. Esto implica la protección de especies vegetales y animales autóctonas, la restauración de hábitats naturales y la promoción de prácticas agrícolas sostenibles que minimicen el impacto sobre la biodiversidad.
+                    </li>
+                    <li>
+                        <b>Restauración de ecosistemas</b>: Implementamos programas de restauración y rehabilitación de ecosistemas en colaboración con expertos en conservación. Estos esfuerzos incluyen la revegetación de áreas degradadas, la recuperación de cauces de ríos y arroyos, y la creación de corredores ecológicos que conecten diferentes espacios naturales.
+                    </li>
+                    <li>
+                        <b>Gestión sostenible del agua</b>: La gestión eficiente y sostenible del agua es esencial para la preservación de los espacios naturales. Implementamos sistemas de riego inteligentes que optimizan el uso del agua y evitan el desperdicio. Además, trabajamos en la restauración y mantenimiento de humedales y zonas de filtración que contribuyen a la purificación del agua y a la conservación de los ecosistemas acuáticos.
+                    </li>
+                    <li>
+                        <b>Educación y sensibilización</b>: Promovemos la educación ambiental y la sensibilización sobre la importancia de la preservación de los espacios naturales y parques asociados a la huerta. Realizamos programas de divulgación y actividades educativas dirigidas a la comunidad local y a visitantes, para fomentar la valoración y el respeto por estos entornos naturales.
+                    </li>
+                    <li>
+                        <b>Colaboración con entidades y organizaciones</b>: Trabajamos en estrecha colaboración con entidades y organizaciones locales, regionales y nacionales dedicadas a la conservación de la naturaleza. A través de alianzas estratégicas, promovemos la coordinación de esfuerzos y el intercambio de conocimientos y mejores prácticas en materia de preservación de espacios naturales.
+                    </li>
+                </ul>
+                <p>
+                    Nuestro objetivo final es asegurar la preservación a largo plazo de los espacios naturales y parques asociados a la huerta, garantizando su valor como hábitats de flora y fauna, espacios recreativos y fuentes de belleza paisajística. A través de un enfoque basado en la sostenibilidad y la conservación, trabajamos para mantener estos espacios como tesoros naturales para las generaciones presentes y futuras.
+                </p>
+                <img src="img/huerta/SostenibilidadAmbiental_3.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Flujo ecológico y sostenibilidad en los sistemas de riego</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    El flujo ecológico y la sostenibilidad en los sistemas de riego son conceptos fundamentales para garantizar un uso eficiente y responsable del agua en la agricultura y el paisajismo. Estos enfoques buscan minimizar el desperdicio de agua, conservar los recursos naturales y preservar el equilibrio ecológico en los ecosistemas.
+                </p>
+                <p>
+                    El flujo ecológico se refiere a la cantidad y calidad del agua necesaria para mantener los procesos vitales de los ecosistemas acuáticos. En el contexto de los sistemas de riego, implica la asignación adecuada de agua para mantener la salud de los cuerpos de agua y los hábitats asociados. Esto implica no solo satisfacer las necesidades de riego de los cultivos, sino también considerar las demandas hídricas de los ecosistemas naturales y las especies que dependen de ellos.
+                </p>
+                <p>
+                    La sostenibilidad en los sistemas de riego se enfoca en lograr un equilibrio entre las necesidades de producción agrícola y la conservación de los recursos naturales. Esto implica adoptar prácticas de riego eficientes que minimicen las pérdidas de agua, como el uso de tecnologías de riego por goteo, aspersión o microaspersión. Además, se promueven técnicas de gestión del agua, como el monitoreo regular de la humedad del suelo, la programación adecuada de los tiempos y frecuencias de riego, y la reutilización del agua de drenaje.
+                </p>
+                <p>
+                    Para garantizar la sostenibilidad en los sistemas de riego, también es importante considerar el uso de fuentes de agua alternativas, como aguas residuales tratadas o captación de agua de lluvia. Estas prácticas ayudan a reducir la dependencia de los recursos hídricos convencionales y a conservar el agua dulce para otros usos esenciales.
+                </p>
+                <img src="img/huerta/SostenibilidadAmbiental_4.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="privacy-wrapper">
+                <div>© <a href="Inicio.html">HortaTech</a> 2023</div>
+                <div><a href="/downloadable/Política de privacidad Hortatech.pdf" download="">Política de Privacidad</a></div>
+                <div><a href="/downloadable/Aviso legal Hortatech.pdf" download="">Aviso Legal</a></div>
+            </div>
+            <div class="social-wrapper">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

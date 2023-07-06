@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-index.css">
+    <script src="js/script.js"></script>
+    <title>HortaTech - Inicio</title>
+</head>
+<body onload="init()">
+    <div class="welcome">
+        <div class="logo-wrapper to-hide">
+            <img src="img/HortaTech_logo.png" alt="">
+            <h1 class="title"><span>Horta</span><span>Tech</span></h1>
+        </div>
+        <svg class="to-hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+    </div>
+    <nav id="nav">
+        <div class="nav-wrapper">
+            <a href="Inicio.html"><img src="img/HortaTech_logo.png" alt=""></a>
+            <p>Horta<span>Tech</span></p>
+        </div>
+        <h1>Inicio</h1>
+        <div id="nav-icon" onclick="toggleNav('auto')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+    </nav>
+    <div id="nav-menu">
+        <div>
+            <a href="inicio.html"><span>Inicio</span></a>
+        </div>
+        <div>
+            <a href="gestion-del-agua.html">Gestión del Agua</a>
+        </div>
+        <div>
+            <a href="impacto-social.html">Impacto Social</a>
+        </div>
+        <div>
+            <a href="sostenibilidad-ambiental.html">Sostenibilidad Ambiental</a>
+        </div>
+        <div>
+            <a href="tecnologias.html">Tecnologías</a>
+        </div>
+        <div>
+            <a href="noticias-y-actualizaciones.html">Noticias y Actualizaciones</a>
+        </div>
+        <div>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+        <div>
+            <a href="contactanos.html">Contáctanos</a>
+        </div>
+    </div>
+    <div id="navigation-toolbar">
+        <div>
+            <svg onclick="scrollToSection('down')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('up')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('top')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg>   
+        </div>
+        <div>
+            <a href="gestion-del-agua.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+            </a>
+        </div>
+    </div>
+    <main>
+        <header>
+            <h1>Inicio</h1>
+        </header>
+        <section>
+            <div class="collapsible">
+                <h2>Visión general del proyecto</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>Hortatech es una iniciativa ambiciosa y transformadora que tiene como objetivo optimizar la gestión de los recursos hídricos y preservar el valioso patrimonio humano y paisajístico de la Huerta de Valencia. Con la colaboración de empresas y entidades líderes, nos comprometemos a revolucionar el uso y la conservación del agua mediante soluciones tecnológicas innovadoras y la promoción de una economía circular.</p> 
+                <img src="img/huerta/CC2385EN_GIAHS_img41.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Metas y objetivos</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <ul>
+                    <li><b>Optimizar</b> la gestión de los recursos hídricos en la Huerta de Valencia para <b>lograr la sostenibilidad</b> a largo plazo.</li>
+                    <li><b>Preservar</b> y <b>promover</b> el patrimonio cultural y natural asociado a la huerta.</li>
+                    <li><b>Crear conciencia</b> sobre el valor del agua y la importancia histórica de las infraestructuras hidráulicas.</li>
+                    <li><b>Fomentar</b> el <b>crecimiento económico</b>, el <b>ahorro de energía</b> y el <b>bienestar social</b> a través de prácticas eficientes de gestión del agua.</li>
+                </ul>
+                <img src="img/huerta/Horta-de-Paiporta.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Características clave y beneficios</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <ul>
+                    <li><b>Control y monitorización en tiempo real</b>: Utilizamos una solución innovadora de control en tiempo real que permite una gestión eficiente y sostenible de los recursos hídricos. Esta tecnología nos permite optimizar los costos operativos y de mantenimiento, al tiempo que aseguramos el funcionamiento efectivo de la infraestructura hídrica.
+                    </li>
+                    <li><b>Gestión digital del patrimonio</b>: Hortatech tiene como objetivo desarrollar herramientas avanzadas para la preservación, difusión y gestión digital del valioso patrimonio humano, paisajístico y cultural de la huerta. A través de la digitalización y los principios de la economía circular, aprovechamos el valor digital del patrimonio hidráulico para promover el turismo cultural y la apreciación entre los ciudadanos.
+                    </li>
+                    <li><b>Enfoque social</b>: Hortatech se esfuerza por crear conciencia en la sociedad sobre el valor del agua y la importancia de los agricultores en la Huerta de Valencia. Promovemos la accesibilidad universal para todos los usuarios y enfatizamos la importancia histórica y patrimonial de las infraestructuras hidráulicas para fomentar un sentido de orgullo y conexión dentro de la comunidad.</li>
+                    <li><b>Sostenibilidad ambiental</b>: Mediante la implementación de tecnologías de sensores basadas en fibra óptica y un panel de control digital integral para la gestión del ciclo del agua, contribuimos activamente a los esfuerzos de conservación del agua. Nuestro objetivo es monitorear la calidad del agua, preservar los espacios naturales y parques asociados a la huerta y establecer sistemas de riego sostenibles que se alineen con los principios de flujo ecológico.</li>
+                </ul>
+                <img src="img/huerta/CC2385EN_GIAHS_img38.jpg" alt="">
+            </div>
+        </section>
+    </main> 
+    <footer>
+        <div class="footer-wrapper">
+            <div class="privacy-wrapper">
+                <div>© <a href="Inicio.html">HortaTech</a> 2023</div>
+                <div><a href="/downloadable/Política de privacidad Hortatech.pdf" download="">Política de Privacidad</a></div>
+                <div><a href="/downloadable/Aviso legal Hortatech.pdf" download="">Aviso Legal</a></div>
+            </div>
+            <div class="social-wrapper">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

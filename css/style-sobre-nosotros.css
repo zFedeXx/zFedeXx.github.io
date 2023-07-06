@@ -1,0 +1,16 @@
+.contact-card {
+    display: flex;
+    margin: 1em;
+    gap: 1em;
+}
+
+.contact-card img {
+    border-radius: 50%;
+    height: max(20vh, 100px);
+    filter: drop-shadow(0 0 6px var(--honolulu-blue));
+}
+
+.contact-card > p {
+    display: flex;
+    align-items: center;
+}

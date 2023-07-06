@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-tecnologias.css">
+    <script src="js/script.js"></script>
+    <title>HortaTech - Tecnologías</title>
+</head>
+<body onload="init()">
+    <nav id="nav">
+        <div class="nav-wrapper">
+            <a href="Inicio.html"><img src="img/hortatech_logo.png" alt=""></a>
+            <p>Horta<span>Tech</span></p>
+        </div>
+        <h1>Tecnologías</h1>
+        <div id="nav-icon" onclick="toggleNav('auto')">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+        </div>
+    </nav>
+    <div id="nav-menu"> <!--CHANGE THE SPAN TAG TO THE CURRENT PAGE-->
+        <div>
+            <a href="inicio.html">Inicio</a>
+        </div>
+        <div>
+            <a href="gestion-del-agua.html">Gestión del Agua</a>
+        </div>
+        <div>
+            <a href="impacto-social.html">Impacto Social</a>
+        </div>
+        <div>
+            <a href="sostenibilidad-ambiental.html">Sostenibilidad Ambiental</a>
+        </div>
+        <div>
+            <a href="tecnologias.html"><span>Tecnologías</span></a>
+        </div>
+        <div>
+            <a href="noticias-y-actualizaciones.html">Noticias y Actualizaciones</a>
+        </div>
+        <div>
+            <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        </div>
+        <div>
+            <a href="contactanos.html">Contáctanos</a>
+        </div>
+    </div>
+    <div id="navigation-toolbar">
+        <div>
+            <svg onclick="scrollToSection('down')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('up')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+        </div>
+        <div>
+            <svg onclick="scrollToSection('top')" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M246.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 109.3 361.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160zm160 352l-160-160c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L224 301.3 361.4 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3z"/></svg>   
+        </div>
+        <div>
+            <a href="noticias-y-actualizaciones.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg>
+            </a>
+        </div>
+    </div>
+    <main>
+        <header>
+            <h1>Tecnologías</h1>
+        </header>
+        <section>
+            <div class="collapsible">
+                <h2>Información detallada sobre las soluciones tecnológicas avanzadas utilizadas en Hortatech</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    Hortatech utiliza una variedad de soluciones tecnológicas avanzadas para optimizar la gestión del agua y la preservación del patrimonio en la Huerta de Valencia. Estas soluciones están diseñadas para mejorar la eficiencia, la sostenibilidad y la efectividad de nuestras operaciones. A continuación, se presenta una descripción de algunas de las principales soluciones tecnológicas utilizadas en Hortatech:
+                </p>
+                <ul>
+                    <li>
+                        <b>Sistemas de telemetría y control en tiempo real</b>: Implementamos sistemas de telemetría y control en tiempo real para monitorear y gestionar de manera eficiente los recursos hídricos. Estos sistemas nos permiten recopilar datos precisos sobre el flujo de agua, los niveles de humedad del suelo y otros parámetros relevantes. Utilizando esta información, podemos ajustar las operaciones de riego y garantizar un uso óptimo del agua.
+                    </li>
+                    <li>
+                        <b>Sensores y dispositivos inteligentes</b>: Empleamos una variedad de sensores y dispositivos inteligentes para monitorear y recopilar datos en tiempo real sobre la calidad del agua, la temperatura, la humedad y otros indicadores relevantes. Estos dispositivos nos ayudan a detectar problemas potenciales, identificar tendencias y tomar decisiones informadas para garantizar la calidad del agua y la eficiencia en su uso.
+                    </li>
+                    <li>
+                        <b>Plataformas de gestión de datos</b>: Utilizamos plataformas de gestión de datos para almacenar, analizar y visualizar la información recopilada por nuestros sistemas de monitoreo. Estas plataformas nos brindan una visión completa y en tiempo real de los datos, lo que nos permite tomar decisiones basadas en evidencia y optimizar nuestras operaciones.
+                    </li>
+                    <li>
+                        <b>Modelos de predicción y análisis avanzado</b>: Aplicamos modelos de predicción y análisis avanzado para prever la demanda de agua, identificar patrones de uso y optimizar la planificación del riego. Estos modelos nos ayudan a optimizar el uso del agua y a garantizar una distribución equitativa y eficiente de los recursos hídricos en la Huerta de Valencia.
+                    </li>
+                    <li>
+                        <b>Tecnología de información geográfica (GIS)</b>: Utilizamos tecnología de información geográfica para mapear y visualizar la distribución de los recursos hídricos, los sistemas de riego y otros elementos relevantes en la Huerta de Valencia. Esto nos permite tener una comprensión completa de la infraestructura hidráulica y optimizar su funcionamiento.
+                    </li>
+                </ul>
+                <p>
+                    Estas soluciones tecnológicas avanzadas nos permiten tomar decisiones más informadas, optimizar el uso del agua, mejorar la gestión de recursos y preservar el patrimonio de la Huerta de Valencia. A través de la implementación de estas tecnologías, buscamos lograr una gestión hídrica más eficiente, sostenible y resiliente en beneficio de la comunidad local y del medio ambiente.
+                </p>
+                <img src="img/huerta/2013-06-01-11.16.44.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Descripción de las tecnologías de sensores basadas en fibra óptica</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    Las tecnologías de sensores basadas en fibra óptica ofrecen diversas soluciones para la medición de variables en el agua. Estas tecnologías se utilizan en Hortatech para monitorear y garantizar la calidad del agua en la Huerta de Valencia. Algunas de estas tecnologías incluyen:
+                </p>
+                <ul>
+                    <li>
+                        <b>Sensores de fibra óptica para la medición de temperatura</b>: Estos sensores utilizan cambios en la longitud de onda de la luz para medir la temperatura del agua. Se pueden implementar en diferentes puntos de la red de distribución de agua para monitorear y controlar la temperatura en tiempo real, lo que es especialmente importante para garantizar la seguridad y eficiencia de los sistemas de calefacción y refrigeración.
+                    </li>
+                    <li>
+                        <b>Sensores de fibra óptica para la medición de turbidez</b>: La turbidez del agua es un indicador importante de su calidad y claridad. Los sensores de fibra óptica basados en la dispersión de la luz pueden medir la turbidez del agua al detectar las partículas suspendidas en ella. Estos sensores son utilizados para controlar y mantener la calidad del agua en ríos, embalses y sistemas de suministro de agua potable.
+                    </li>
+                    <li>
+                        <b>Sensores de fibra óptica para la medición de pH</b>: El pH es otro parámetro crítico para determinar la calidad del agua. Los sensores de fibra óptica pueden ser diseñados para medir el pH mediante la utilización de recubrimientos sensibles a los cambios de acidez o alcalinidad. Estos sensores ofrecen una medición precisa y estable del pH del agua, lo que permite tomar medidas oportunas para mantener la calidad y evitar la corrosión en las infraestructuras hidráulicas.
+                    </li>
+                    <li>
+                        <b>Sensores de fibra óptica para la detección de contaminantes</b>: Los sensores de fibra óptica pueden ser utilizados para detectar y medir diferentes contaminantes en el agua, como metales pesados, compuestos orgánicos y productos químicos tóxicos. Estos sensores se basan en la interacción entre la luz y los materiales específicos presentes en el agua, proporcionando una detección sensible y selectiva de los contaminantes.
+                    </li>
+                </ul>
+                <p>
+                    Estas tecnologías de sensores basadas en fibra óptica son herramientas valiosas para el monitoreo y control de la calidad del agua en la Huerta de Valencia. Proporcionan mediciones precisas y en tiempo real de variables importantes, lo que facilita la toma de decisiones informadas y la implementación de estrategias efectivas para la gestión sostenible del agua.
+                </p>
+                <img src="img/huerta/2.jpg" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Panel de control para la gestión digital del ciclo del agua</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    Un panel de control para la gestión digital del ciclo del agua es una herramienta centralizada que permite monitorear y controlar de manera eficiente los diferentes aspectos del ciclo del agua, desde la captación hasta el tratamiento y la distribución. Este panel de control utiliza tecnologías digitales y sistemas de información para recopilar, procesar y visualizar datos relevantes en tiempo real, lo que facilita la toma de decisiones informadas y la optimización de los recursos hídricos.
+                </p>
+                <p>
+                    Algunas características y funcionalidades clave de un panel de control para la gestión digital del ciclo del agua pueden incluir:
+                </p>
+                <ul>
+                    <li>
+                        <b>Monitoreo de variables</b>: El panel de control recopila datos en tiempo real de diversas variables relacionadas con el ciclo del agua, como caudal, presión, nivel de agua, calidad del agua y consumo. Estos datos son presentados de forma clara y visual, lo que permite una fácil interpretación y seguimiento de los parámetros clave.
+                    </li>
+                    <li>
+                        <b>Alertas y notificaciones</b>: El panel de control está diseñado para generar alertas y notificaciones automáticas en caso de que se detecten anomalías o situaciones de riesgo. Esto permite una respuesta rápida y eficiente ante cualquier evento inesperado, como fugas, bajos niveles de agua o problemas en la calidad del agua.
+                    </li>
+                    <li>
+                        <b>Optimización de recursos</b>: Mediante la recopilación y análisis de datos en tiempo real, el panel de control ayuda a identificar oportunidades de ahorro y optimización en el uso de los recursos hídricos. Esto incluye la detección de fugas, la gestión eficiente de la energía, la programación inteligente de riegos y la identificación de patrones de consumo que pueden guiar la toma de decisiones para mejorar la eficiencia en el ciclo del agua.
+                    </li>
+                    <li>
+                        <b>Integración de sistemas</b>: El panel de control puede integrar y sincronizar diferentes sistemas y dispositivos utilizados en la gestión del ciclo del agua, como sensores, medidores, válvulas y bombas. Esto permite una gestión centralizada y coordinada de todas las etapas del ciclo del agua, optimizando la operación y el mantenimiento de la infraestructura hídrica.
+                    </li>
+                    <li>
+                        <b>Análisis y reportes</b>: El panel de control puede generar informes y análisis detallados sobre el desempeño y la eficiencia del ciclo del agua. Estos informes proporcionan datos históricos, tendencias y estadísticas que ayudan a evaluar el rendimiento y tomar decisiones estratégicas a largo plazo.
+                    </li>
+                </ul>
+                <p>
+                    En resumen, un panel de control para la gestión digital del ciclo del agua es una herramienta esencial para optimizar la gestión de los recursos hídricos. Proporciona una visión integral y en tiempo real de todas las etapas del ciclo del agua, lo que permite una gestión más eficiente, sostenible y resiliente del agua en la Huerta de Valencia.
+                </p>
+                <img src="img/progetto/unnamed (3).png" alt="">
+            </div>
+        </section>
+        <section>
+            <div class="collapsible">
+                <h2>Plataforma para la sostenibilidad y el ahorro de agua en los sistemas de riego</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"/></svg>
+            </div>
+            <hr>
+            <div class="article-content">
+                <p>
+                    Una plataforma para la sostenibilidad y el ahorro de agua en los sistemas de riego es una solución tecnológica integral diseñada para optimizar el uso del agua en la agricultura y promover prácticas sostenibles. Esta plataforma utiliza tecnologías avanzadas, análisis de datos y automatización para mejorar la eficiencia en los sistemas de riego y reducir el consumo de agua, al mismo tiempo que garantiza un adecuado suministro hídrico para el cultivo.
+                </p>
+                <p>
+                    Algunas características y beneficios clave de una plataforma para la sostenibilidad y el ahorro de agua en los sistemas de riego pueden incluir:
+                </p>
+                <ul>
+                    <li>
+                        <b>Monitorización y control en tiempo real</b>: La plataforma permite la monitorización y control en tiempo real de los sistemas de riego, brindando información detallada sobre el estado del agua, el flujo de riego, la humedad del suelo y otros parámetros relevantes. Esto permite ajustar el riego de manera precisa y oportuna, evitando el uso excesivo de agua y optimizando su distribución.
+                    </li>
+                    <li>
+                        <b>Programación inteligente</b>: La plataforma utiliza algoritmos y modelos predictivos para programar de manera inteligente los ciclos de riego, considerando factores como las condiciones climáticas, las necesidades hídricas de los cultivos y las características del suelo. Esto ayuda a evitar el riego innecesario o inadecuado, optimizando el consumo de agua y reduciendo los costos asociados.
+                    </li>
+                    <li>
+                        <b>Sensores y tecnologías de medición</b>: La plataforma integra diversos sensores y tecnologías de medición, como sensores de humedad del suelo, sensores de temperatura, pluviómetros y estaciones meteorológicas. Estos dispositivos recopilan datos en tiempo real sobre las condiciones ambientales y la disponibilidad de agua, permitiendo un monitoreo preciso y una toma de decisiones fundamentada.
+                    </li>
+                    <li>
+                        <b>Automatización y control remoto</b>: La plataforma ofrece la posibilidad de automatizar y controlar los sistemas de riego de forma remota. Esto permite realizar ajustes y cambios en la programación de riego desde cualquier ubicación, lo que facilita la gestión eficiente del agua y ahorra tiempo y recursos.
+                    </li>
+                    <li>
+                        <b>Análisis de datos y reportes</b>: La plataforma recopila y analiza datos sobre el consumo de agua, los patrones de riego y otros indicadores clave. Estos datos se presentan en informes y análisis detallados, que brindan información valiosa para evaluar el rendimiento del sistema de riego, identificar áreas de mejora y tomar decisiones informadas.
+                    </li>
+                </ul>
+                <p>
+                    En resumen, una plataforma para la sostenibilidad y el ahorro de agua en los sistemas de riego es una herramienta poderosa que permite optimizar el uso del agua en la agricultura, reducir el desperdicio y mejorar la eficiencia de los sistemas de riego. Al promover prácticas sostenibles y responsables, contribuye a la conservación de los recursos hídricos y a la producción agrícola sostenible en la Huerta de Valencia.
+                </p>
+                <img src="img/huerta/Captura-de-pantalla-2023-05-11-a-las-14.17.44.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="privacy-wrapper">
+                <div>© <a href="Inicio.html">HortaTech</a> 2023</div>
+                <div><a href="/downloadable/Política de privacidad Hortatech.pdf" download="">Política de Privacidad</a></div>
+                <div><a href="/downloadable/Aviso legal Hortatech.pdf" download="">Aviso Legal</a></div>
+            </div>
+            <div class="social-wrapper">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
